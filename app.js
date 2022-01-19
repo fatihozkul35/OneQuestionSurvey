@@ -2,17 +2,23 @@ const button1 = document.querySelector(".btn.btn1");
 const button2 = document.querySelector(".btn.btn2");
 
 button1.addEventListener("mouseover", setPosition);
+button2.addEventListener("mouseover", setPosition);
 
 function setPosition() {
-  button1.style.left = `${randomPositionNumberX()}`;
-  button1.style.top = `${randomPositionNumberY()}`;
-}
-if ("mouseover") {
-  //  block of code to be executed if condition1 is true
-} else if (condition2) {
-  //  block of code to be executed if the condition1 is false and condition2 is true
-} else {
-  //  block of code to be executed if the condition1 is false and condition2 is false
+  button1.style.left = `250px`;
+  button1.style.top = `450px`;
+
+  button2.style.left = `450px`;
+  button2.style.top = `450px`;
+
+  // button1.style.left = `250px`;
+  // button1.style.top = `450px`;
+
+  // button1.style.left = `250px`;
+  // button1.style.top = `450px`;
+
+  // button1.style.left = `${randomPositionNumberX()}`;
+  // button1.style.top = `${randomPositionNumberY()}`;
 }
 
 function randomPositionNumberX() {
