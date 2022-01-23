@@ -14,22 +14,48 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  text-align: center;
 }
 .header {
-  height: 10vh;
+  height: 15vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.footer {
-  height: 10vh;
+.main {
+  height: 20vh;
+  width: 100vw;
+  font-size: 2rem;
+  color: green;
+  font-weight: bold;
+}
+.buttons {
+  height: 65vh;
+  width: 100vw;
 }
 .btn {
   display: inline-block;
-  width: 100px;
+  width: 150px;
   height: 50px;
 }
-.btn1 {
+.btn-primary {
   position: absolute;
+  left: 35%;
+  top: 50%;
 }
-.btn2 {
+.btn-secondary {
   position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.main02 {
+  width: 100vw;
+  height: 100vh;
+  background-color: blue;
+  color: red;
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,29 +1,21 @@
-const button1 = document.querySelector(".btn.btn1");
-const button2 = document.querySelector(".btn.btn2");
+const button2 = document.querySelector(".btn-secondary");
 
-button1.addEventListener("mouseover", setPosition);
-button2.addEventListener("mouseover", setPosition);
+button2.addEventListener("click", setPosition);
+
+let randomPositionListX = ["12%", "43%", "88%"];
+let randomPositionListY = ["35%", "70%", "85%"];
 
 function setPosition() {
-  button1.style.left = `250px`;
-  button1.style.top = `450px`;
+  button2.style.left = randomPositionListX[randomPositionX()];
 
-  button2.style.left = `450px`;
-  button2.style.top = `450px`;
-
-  // button1.style.left = `250px`;
-  // button1.style.top = `450px`;
-
-  // button1.style.left = `250px`;
-  // button1.style.top = `450px`;
-
-  // button1.style.left = `${randomPositionNumberX()}`;
-  // button1.style.top = `${randomPositionNumberY()}`;
+  button2.style.top = randomPositionListY[randomPositionY()];
+  console.log(button2.style.left, button2.style.top);
 }
 
-function randomPositionNumberX() {
-  return Math.floor(Math.random() * 1000) + 100 + "px";
+function randomPositionX() {
+  return Math.floor(Math.random() * 3);
 }
-function randomPositionNumberY() {
-  return Math.floor(Math.random() * 400) + 50 + "px";
+
+function randomPositionY() {
+  return Math.floor(Math.random() * 3);
 }
