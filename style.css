@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 .main {
   display: flex;
@@ -58,4 +59,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 450px) {
+  .header h1 {
+    font-size: 1rem;
+  }
+  .main {
+    font-size: 1rem;
+  }
+  .buttons button{
+    font-size: .7rem;
+    }
+  }
+  .btn {
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+  }
 }
