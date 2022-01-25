@@ -61,16 +61,15 @@
   align-items: center;
 }
 
-@media screen and (max-width: 450px) {
+@media (max-width: 450px) {
   .header h1 {
     font-size: 1rem;
   }
   .main {
     font-size: 1rem;
   }
-  .buttons button{
-    font-size: .7rem;
-    }
+  .buttons button {
+    font-size: 0.7rem;
   }
   .btn {
     display: inline-block;
